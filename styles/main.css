@@ -1,0 +1,435 @@
+.show-result .outter-circle .inner-circle, .show-result .outter-circle, .game-playground .picks-container .outter-circle .inner-circle, .game-playground .picks-container .outter-circle, .game-playground .picks-container, .game-playground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url(../../fonts/BarlowSemiCondensed-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url(../../fonts/BarlowSemiCondensed-Bold.ttf);
+  font-weight: 700;
+}
+.show-result .outter-circle .inner-circle, .show-result .outter-circle, .game-playground .picks-container .outter-circle .inner-circle, .game-playground .picks-container .outter-circle, .game-playground .picks-container, .game-playground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body > header {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid hsl(217deg, 16%, 45%);
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto;
+  transform: translateY(50px);
+}
+body > header .score-box {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+body > header .score-box .title {
+  color: hsl(229deg, 64%, 46%);
+  letter-spacing: 1.5px;
+}
+body > header .score-box .score {
+  color: hsl(229deg, 25%, 31%);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.show-result .outter-circle .inner-circle, .show-result .outter-circle, .game-playground .picks-container .outter-circle .inner-circle, .game-playground .picks-container .outter-circle, .game-playground .picks-container, .game-playground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pop-up {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+}
+.pop-up .rules-card {
+  position: absolute;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-inline: 20px;
+  max-width: 400px;
+  -webkit-animation-name: grow-up;
+          animation-name: grow-up;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.pop-up .rules-card.close {
+  -webkit-animation: grow-back 0.5s ease forwards;
+          animation: grow-back 0.5s ease forwards;
+}
+.pop-up .rules-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  color: hsl(229deg, 25%, 31%);
+}
+.pop-up .rules-card header span {
+  cursor: pointer;
+}
+.pop-up .rules-card .rules-img {
+  max-width: 100%;
+}
+.pop-up .rules-card .rules-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+
+@-webkit-keyframes grow-up {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes grow-up {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes grow-back {
+  0% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes grow-back {
+  0% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.show-result .outter-circle .inner-circle, .show-result .outter-circle, .game-playground .picks-container .outter-circle .inner-circle, .game-playground .picks-container .outter-circle, .game-playground .picks-container, .game-playground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-playground {
+  max-width: 800px;
+  margin-inline: auto;
+  margin-top: 160px;
+}
+.game-playground .picks-container {
+  position: relative;
+  margin-bottom: 190px;
+}
+.game-playground .picks-container.hide {
+  display: none;
+}
+.game-playground .picks-container .outter-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+.game-playground .picks-container .outter-circle.scissors {
+  left: 50%;
+  top: -70px;
+  transform: translateX(-50%);
+}
+.game-playground .picks-container .outter-circle.paper {
+  right: -80px;
+  top: 45px;
+}
+.game-playground .picks-container .outter-circle.rock {
+  right: -10px;
+  top: 230px;
+}
+.game-playground .picks-container .outter-circle.lizard {
+  left: -10px;
+  top: 230px;
+}
+.game-playground .picks-container .outter-circle.spock {
+  left: -80px;
+  top: 45px;
+}
+.game-playground .picks-container .outter-circle .inner-circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  box-shadow: 0 7px rgba(0, 0, 0, 0.3) inset;
+}
+
+.outter-circle.scissors {
+  background-image: linear-gradient(hsl(39deg, 89%, 49%), hsl(40deg, 84%, 53%));
+  box-shadow: 0 7px #bc7e0b;
+}
+
+.outter-circle.paper {
+  background-image: linear-gradient(hsl(230deg, 89%, 62%), hsl(230deg, 89%, 65%));
+  box-shadow: 0 7px hsl(230deg, 89%, 60%);
+}
+
+.outter-circle.rock {
+  background-image: linear-gradient(hsl(349deg, 71%, 52%), hsl(349deg, 70%, 56%));
+  box-shadow: 0 7px hsl(349deg, 71%, 40%);
+}
+
+.outter-circle.lizard {
+  background-image: linear-gradient(hsl(261deg, 73%, 60%), hsl(261deg, 72%, 63%));
+  box-shadow: 0 7px hsl(261deg, 73%, 55%);
+}
+
+.outter-circle.spock {
+  background-image: linear-gradient(hsl(189deg, 59%, 53%), hsl(189deg, 58%, 57%));
+  box-shadow: 0 7px hsl(189deg, 58%, 40%);
+}
+
+@media (max-width: 530px) {
+  .game-playground .picks-container {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 300px;
+  }
+  .game-playground .picks-container > img {
+    max-width: 100%;
+  }
+  .game-playground .picks-container .outter-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .game-playground .picks-container .outter-circle.scissors {
+    top: -45px;
+  }
+  .game-playground .picks-container .outter-circle.paper {
+    right: -30px;
+  }
+  .game-playground .picks-container .outter-circle.rock {
+    top: 180px;
+    right: 0;
+  }
+  .game-playground .picks-container .outter-circle.lizard {
+    top: 180px;
+    left: 0;
+  }
+  .game-playground .picks-container .outter-circle.spock {
+    left: -30px;
+  }
+  .game-playground .picks-container .outter-circle .inner-circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
+  .game-playground .picks-container .outter-circle .inner-circle img {
+    max-width: 45%;
+  }
+}
+.show-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  height: 313px;
+  margin-bottom: 230px;
+}
+.show-result.hide {
+  display: none;
+}
+.show-result .user-pick {
+  border-radius: 50%;
+}
+.show-result .user-pick.winner {
+  box-shadow: 0 0 0px 40px hsla(0deg, 0%, 100%, 0.03), 0 0 0px 100px hsla(0deg, 0%, 100%, 0.03), 0 0 0px 160px hsla(0deg, 0%, 100%, 0.03);
+}
+.show-result .house-pick {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: hsla(238deg, 48%, 15%, 0.5);
+}
+.show-result .house-pick.winner {
+  box-shadow: 0 0 0px 40px hsla(0deg, 0%, 100%, 0.03), 0 0 0px 100px hsla(0deg, 0%, 100%, 0.03), 0 0 0px 160px hsla(0deg, 0%, 100%, 0.03);
+}
+.show-result .outter-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.show-result .outter-circle .inner-circle {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  box-shadow: 0 7px rgba(0, 0, 0, 0.3) inset;
+}
+.show-result .left .left-title,
+.show-result .right .right-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.show-result .result {
+  display: block;
+  -webkit-animation-name: scale-up;
+          animation-name: scale-up;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+.show-result .result.hidden {
+  display: none;
+}
+.show-result .result h2 {
+  font-size: 3.5rem;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.show-result .result button {
+  width: 250px;
+  padding: 15px 20px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  color: hsl(229deg, 25%, 31%);
+  font-family: inherit;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+@-webkit-keyframes scale-up {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@media (max-width: 840px) {
+  .show-result {
+    margin-top: -100px;
+    margin-bottom: 330px;
+  }
+  .show-result .house-pick {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .show-result .left .left-title,
+.show-result .right .right-title {
+    font-size: 0.97rem;
+  }
+  .show-result .outter-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .show-result .outter-circle .inner-circle {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+  }
+  .show-result .result {
+    position: absolute;
+    bottom: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow";
+  font-weight: 600;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, hsl(214deg, 47%, 23%), hsl(237deg, 49%, 15%)) no-repeat;
+  color: white;
+  padding-inline: 20px;
+}
+
+footer #rules-btn {
+  display: block;
+  margin-left: auto;
+  width: 150px;
+  padding: 15px;
+  font-family: inherit;
+  color: white;
+  background-color: transparent;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  border: 3px solid hsl(217deg, 16%, 45%);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 530px) {
+  footer #rules-btn {
+    margin: auto;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,128 @@
+@import "../helpers/variables";
+
+.game-playground {
+  max-width: 800px;
+  margin-inline: auto;
+  margin-top: 160px;
+  @extend %center;
+
+  .picks-container {
+    position: relative;
+    margin-bottom: 190px;
+    @extend %center;
+
+    &.hide {
+      display: none;
+    }
+
+    .outter-circle {
+      @include circle(150px);
+      @extend %center;
+      position: absolute;
+      cursor: pointer;
+
+      &.scissors {
+        left: 50%;
+        top: -70px;
+        transform: translateX(-50%);
+      }
+
+      &.paper {
+        right: -80px;
+        top: 45px;
+      }
+
+      &.rock {
+        right: -10px;
+        top: 230px;
+      }
+
+      &.lizard {
+        left: -10px;
+        top: 230px;
+      }
+
+      &.spock {
+        left: -80px;
+        top: 45px;
+      }
+
+      .inner-circle {
+        @include circle(110px);
+        @extend %center;
+        background-color: whitesmoke;
+        box-shadow: 0 7px rgba($color: #000000, $alpha: 0.3) inset;
+      }
+    }
+  }
+}
+
+.outter-circle.scissors {
+  background-image: linear-gradient($Scissors-Gradient);
+  box-shadow: 0 7px darken($color: hsl(39, 89%, 49%), $amount: 10%);
+}
+
+.outter-circle.paper {
+  background-image: linear-gradient($Paper-Gradient);
+  box-shadow: 0 7px hsl(230, 89%, 60%);
+}
+
+.outter-circle.rock {
+  background-image: linear-gradient($Rock-Gradient);
+  box-shadow: 0 7px hsl(349, 71%, 40%);
+}
+
+.outter-circle.lizard {
+  background-image: linear-gradient($Lizard-Gradient);
+  box-shadow: 0 7px hsl(261, 73%, 55%);
+}
+
+.outter-circle.spock {
+  background-image: linear-gradient($Cyan);
+  box-shadow: 0 7px hsl(189, 58%, 40%);
+}
+
+@media (max-width: 530px) {
+  .game-playground .picks-container {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 300px;
+
+    > img {
+      max-width: 100%;
+    }
+    .outter-circle {
+      @include circle(100px);
+
+      &.scissors {
+        top: -45px;
+      }
+
+      &.paper {
+        right: -30px;
+      }
+
+      &.rock {
+        top: 180px;
+        right: 0;
+      }
+
+      &.lizard {
+        top: 180px;
+        left: 0;
+      }
+
+      &.spock {
+        left: -30px;
+      }
+
+      .inner-circle {
+        @include circle(75px);
+
+        img {
+          max-width: 45%;
+        }
+      }
+    }
+  }
+}

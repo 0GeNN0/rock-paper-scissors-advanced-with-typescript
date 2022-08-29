@@ -1,0 +1,35 @@
+@import "../helpers/variables";
+
+body > header {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid $Header-Outline;
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto;
+  transform: translateY(50px);
+
+  .score-box {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+
+    .title {
+      color: $Score-Text;
+      letter-spacing: 1.5px;
+    }
+
+    .score {
+      color: $Dark-Text;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+}

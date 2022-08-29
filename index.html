@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>TypeScript | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <!-- START HEADER -->
+
+    <header>
+      <img src="./images/logo-bonus.svg" alt="Rules" />
+      <div class="score-box">
+        <p class="title">Score</p>
+        <span class="score" data-score></span>
+      </div>
+    </header>
+
+    <!-- END HEADER -->
+
+    <!-- START PLAYGROUND AREA -->
+    <main class="game-playground">
+      <!-- Render The Images To Choose One -->
+      <div class="picks-container" dataPicksContainer>
+        <img src="./images/bg-pentagon.svg" alt="pentagon" />
+        <div class="outter-circle scissors" data-picker="scissors">
+          <div class="inner-circle">
+            <img src="./images/icon-scissors.svg" alt="scissors" />
+          </div>
+        </div>
+        <div class="outter-circle paper" data-picker="paper">
+          <div class="inner-circle">
+            <img src="./images/icon-paper.svg" alt="paper" />
+          </div>
+        </div>
+        <div class="outter-circle rock" data-picker="rock">
+          <div class="inner-circle">
+            <img src="./images/icon-rock.svg" alt="rock" />
+          </div>
+        </div>
+        <div class="outter-circle lizard" data-picker="lizard">
+          <div class="inner-circle">
+            <img src="./images/icon-lizard.svg" alt="lizard" />
+          </div>
+        </div>
+        <div class="outter-circle spock" data-picker="spock">
+          <div class="inner-circle">
+            <img src="./images/icon-spock.svg" alt="spock" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Render The Picks And The Winner -->
+      <section class="show-result hide" data-competition>
+        <div class="left">
+          <h2 class="left-title">YOU PICKED</h2>
+          <div class="user-pick" data-userPick></div>
+        </div>
+        <div class="result hidden" data-result>
+          <h2 data-announceTitle></h2>
+          <button id="play-again">Play Again</button>
+        </div>
+        <div class="right">
+          <h2 class="right-title">THE HOUSE PICKED</h2>
+          <div class="house-pick" data-housePick></div>
+        </div>
+      </section>
+    </main>
+    <!-- END PLAYGROUND AREA -->
+
+    <!-- START FOOTER -->
+
+    <footer>
+      <button id="rules-btn">RULES</button>
+    </footer>
+
+    <!-- START FOOTER -->
+    <!-- 
+
+  
+    -->
+    <!-- POP UP RULES -->
+    <dialog class="pop-up">
+      <div class="rules-card">
+        <header>
+          <h2>RULES</h2>
+          <span id="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <path
+                fill="#3B4262"
+                fill-rule="evenodd"
+                d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z"
+                opacity=".25"
+              />
+            </svg>
+          </span>
+        </header>
+        <div class="rules-img">
+          <img src="./images/image-rules-bonus.svg" alt="rules-bouns" />
+        </div>
+      </div>
+    </dialog>
+    <script src="./scripts/dist/JS/app.js"></script>
+  </body>
+</html>
