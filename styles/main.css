@@ -1,20 +1,12 @@
-.show-result .outter-circle .inner-circle, .show-result .outter-circle, .game-playground .picks-container .outter-circle .inner-circle, .game-playground .picks-container .outter-circle, .game-playground .picks-container, .game-playground {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 @font-face {
-  font-family: "Barlow";
-  src: url(../../fonts/BarlowSemiCondensed-SemiBold.ttf);
-  font-weight: 600;
+  font-family: "BarlowSemiCondensed-SemiBold";
+  src: local("BarlowSemiCondensed-SemiBold"), url(../../fonts/BarlowSemiCondensed-SemiBold.ttf) format("truetype");
 }
 @font-face {
-  font-family: "Barlow";
-  src: url(../../fonts/BarlowSemiCondensed-Bold.ttf);
-  font-weight: 700;
+  font-family: "BarlowSemiCondensed-Bold";
+  src: local("BarlowSemiCondensed-Bold"), url(../../fonts/BarlowSemiCondensed-Bold.ttf) format("truetype");
 }
-.show-result .outter-circle .inner-circle, .show-result .outter-circle, .game-playground .picks-container .outter-circle .inner-circle, .game-playground .picks-container .outter-circle, .game-playground .picks-container, .game-playground {
+.show-result .outter-circle, .show-result .outter-circle .inner-circle, .game-playground, .game-playground .picks-container, .game-playground .picks-container .outter-circle, .game-playground .picks-container .outter-circle .inner-circle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,12 +41,6 @@ body > header .score-box .score {
   font-size: 3.5rem;
   font-weight: 700;
   margin: 0;
-}
-
-.show-result .outter-circle .inner-circle, .show-result .outter-circle, .game-playground .picks-container .outter-circle .inner-circle, .game-playground .picks-container .outter-circle, .game-playground .picks-container, .game-playground {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .pop-up {
@@ -93,6 +79,7 @@ body > header .score-box .score {
   align-items: center;
   margin-bottom: 40px;
   color: hsl(229deg, 25%, 31%);
+  font-family: BarlowSemiCondensed-Bold;
 }
 .pop-up .rules-card header span {
   cursor: pointer;
@@ -151,12 +138,6 @@ body > header .score-box .score {
     transform: scale(0);
   }
 }
-.show-result .outter-circle .inner-circle, .show-result .outter-circle, .game-playground .picks-container .outter-circle .inner-circle, .game-playground .picks-container .outter-circle, .game-playground .picks-container, .game-playground {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .game-playground {
   max-width: 800px;
   margin-inline: auto;
@@ -333,6 +314,7 @@ body > header .score-box .score {
   font-size: 3.5rem;
   padding-bottom: 15px;
   text-align: center;
+  font-family: BarlowSemiCondensed-Bold;
 }
 .show-result .result button {
   width: 250px;
@@ -406,8 +388,7 @@ body > header .score-box .score {
 }
 
 body {
-  font-family: "Barlow";
-  font-weight: 600;
+  font-family: "BarlowSemiCondensed-SemiBold";
   min-height: 100vh;
   background: radial-gradient(circle at top, hsl(214deg, 47%, 23%), hsl(237deg, 49%, 15%)) no-repeat;
   color: white;
@@ -419,7 +400,7 @@ footer #rules-btn {
   margin-left: auto;
   width: 150px;
   padding: 15px;
-  font-family: inherit;
+  font-family: BarlowSemiCondensed-SemiBold;
   color: white;
   background-color: transparent;
   letter-spacing: 2px;

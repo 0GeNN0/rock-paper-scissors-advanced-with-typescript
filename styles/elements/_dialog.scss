@@ -1,4 +1,4 @@
-@import "../helpers/variables";
+@use "../index" as *;
 
 .pop-up {
   position: absolute;
@@ -32,6 +32,7 @@
       align-items: center;
       margin-bottom: 40px;
       color: $Dark-Text;
+      font-family: BarlowSemiCondensed-Bold;
 
       span {
         cursor: pointer;

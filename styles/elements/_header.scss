@@ -1,4 +1,4 @@
-@import "../helpers/variables";
+@use "../index" as *;
 
 body > header {
   max-width: 800px;

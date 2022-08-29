@@ -1,9 +1,8 @@
-@import "./helpers/variables";
-@import "./helpers/fonts";
-@import "./elements/header";
-@import "./elements/dialog";
-@import "./elements/play-ground";
-@import "./elements/playground-compat";
+@use "./index" as *;
+@use "./elements/header";
+@use "./elements/dialog";
+@use "./elements/play-ground";
+@use "./elements/playground-compat";
 
 * {
   padding: 0;
@@ -12,8 +11,7 @@
 }
 
 body {
-  font-family: "Barlow";
-  font-weight: 600;
+  font-family: "BarlowSemiCondensed-SemiBold";
   min-height: 100vh;
   background: radial-gradient(circle at top, $Radial-Gradient-BG) no-repeat;
   color: white;
@@ -26,7 +24,7 @@ footer {
     margin-left: auto;
     width: 150px;
     padding: 15px;
-    font-family: inherit;
+    font-family: BarlowSemiCondensed-SemiBold;
     color: white;
     background-color: transparent;
     letter-spacing: 2px;

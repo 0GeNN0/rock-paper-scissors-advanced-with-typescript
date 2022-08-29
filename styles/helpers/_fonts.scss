@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Barlow";
-  src: url(../../fonts/BarlowSemiCondensed-SemiBold.ttf);
-  font-weight: 600;
+  font-family: "BarlowSemiCondensed-SemiBold";
+  src: local("BarlowSemiCondensed-SemiBold"),
+    url(../../fonts/BarlowSemiCondensed-SemiBold.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: "Barlow";
-  src: url(../../fonts/BarlowSemiCondensed-Bold.ttf);
-  font-weight: 700;
+  font-family: "BarlowSemiCondensed-Bold";
+  src: local("BarlowSemiCondensed-Bold"),
+    url(../../fonts/BarlowSemiCondensed-Bold.ttf) format("truetype");
 }
