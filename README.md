@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [Here](https://www.frontendmentor.io/solutions/advanced-rock-paper-scissors-with-typescript-and-sass-z2NBLUJSkT)
+- Live Site URL: [Here](https://0genn0.github.io/rock-paper-scissors-advanced-with-typescript/)
 
 ### Built with
 
