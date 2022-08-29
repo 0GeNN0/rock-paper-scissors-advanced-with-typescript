@@ -369,6 +369,7 @@ body > header .score-box .score {
   .show-result {
     margin-top: -100px;
     margin-bottom: 330px;
+    position: relative;
   }
   .show-result .house-pick {
     width: 150px;
@@ -391,7 +392,7 @@ body > header .score-box .score {
   }
   .show-result .result {
     position: absolute;
-    bottom: 160px;
+    bottom: -200px;
     left: 50%;
     transform: translateX(-50%);
     -webkit-animation: none;

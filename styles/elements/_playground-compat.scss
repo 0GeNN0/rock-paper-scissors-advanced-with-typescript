@@ -98,6 +98,7 @@
   .show-result {
     margin-top: -100px;
     margin-bottom: 330px;
+    position: relative;
 
     .house-pick {
       @include circle(150px);
@@ -118,7 +119,7 @@
 
     .result {
       position: absolute;
-      bottom: 160px;
+      bottom: -200px;
       left: 50%;
       transform: translateX(-50%);
       animation: none;
