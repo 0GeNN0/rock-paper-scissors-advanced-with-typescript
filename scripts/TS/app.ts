@@ -16,7 +16,7 @@ const competitionSection = document.querySelector(
 ) as HTMLElement;
 
 const picksContainer = document.querySelector(
-  "[dataPicksContainer]"
+  "[data-picksContainer]"
 ) as HTMLDivElement;
 
 const userPickElement = document.querySelector(
